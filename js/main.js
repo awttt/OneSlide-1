@@ -171,7 +171,7 @@ const Editor = {
     this.$editInput = $('.editor textarea')
     this.$saveBtn = $('.editor .button-save')
     this.$slideContainer = $('.slides')
-    this.markdown = localStorage.markdown || `# one slide`
+    this.markdown = localStorage.markdown || `## 鼠标浮动至右上角开始使用`
 
     this.bind()
     this.start()
@@ -242,7 +242,7 @@ const Theme = {
   },
 
   loadTheme() {
-    let theme = localStorage.theme || 'beige'
+    let theme = localStorage.theme || 'night'
     let $link = document.createElement('link')
     $link.rel = 'stylesheet'
     $link.href = `css/theme/${theme}.css`
